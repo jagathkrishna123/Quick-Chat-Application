@@ -81,9 +81,9 @@ export const updatedProfile = async (req, res) => {
         } else {
             console.log("Uploading profilePic to Cloudinary...");
             console.log("profilePic preview:", profilePic.slice(0, 50) + "...");
-          const upload = await cloudinary.uploader.upload(
-  "https://res.cloudinary.com/demo/image/upload/sample.jpg"
-);
+         const upload = await cloudinary.uploader.upload(profilePic, {
+  resource_type: "image"
+});
 
 console.log(upload);
             console.log("Cloudinary upload successful:", upload.secure_url);
