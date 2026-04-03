@@ -1,0 +1,15 @@
+Frontend Request
+      ↓
+server.js
+      ↓
+Route (messageRoutes.js)
+      ↓
+Middleware (auth.js)
+      ↓
+Controller (messageController.js)
+      ↓
+Model (Message.js)
+      ↓
+Database (MongoDB)
+      ↓
+Response back to frontend

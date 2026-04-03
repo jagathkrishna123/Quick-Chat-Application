@@ -72,7 +72,7 @@ const LoginPage = () => {
             <span onClick={()=>{setCurrState("Login"); setIsDataSubmitted(false)}} className='font-medium text-violet-500 cursor-pointer'> Login here</span></p>
             
           ) : (
-            <p className='ttext-sm text-gray-600'>Create an account
+            <p className='ttext-sm text-gray-600'>Create an accountx
             <span onClick={()=> setCurrState("Sign up")} className='font-medium text-violet-500 cursor-pointer'> click here</span></p>
           )}
         </div>
